@@ -1,0 +1,125 @@
+
+(session SPU0410LR5H.ses
+  (base_design SPU0410LR5H.dsn)
+  (placement
+    (resolution um 10)
+    (component Mounting_Holes:MountingHole_3mm
+      (place REF2 1570000 -1160000 front 0)
+      (place REF1 1570000 -1070000 front 0)
+    )
+    (component "generic:generic-SMD1608"
+      (place C1 1540000 -1115000 front 90)
+    )
+    (component "pin-head:pinhead-1X03"
+      (place P1 1425000 -1115000 front 270)
+    )
+    (component SPU0410LR5H:SPU0410LR5H
+      (place U1 1500000 -1115000 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "4.0.1-stable")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net VDD
+        (wire
+          (path F.Cu 3000
+            1425000 -1089600
+            1539449 -1089600
+            1548901 -1099052
+            1548901 -1114837
+            1540000 -1123738
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1540000 -1123738
+            1531099 -1123738
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1521030 -1124660
+            1530177 -1124660
+            1531099 -1123738
+          )
+        )
+      )
+      (net GND
+        (wire
+          (path F.Cu 3000
+            1425000 -1140400
+            1478410 -1140400
+            1493660 -1125150
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1540000 -1106262
+            1531099 -1106262
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1521030 -1115000
+            1522361 -1115000
+            1531099 -1106262
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1500000 -1115000
+            1521030 -1115000
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1500000 -1115000
+            1493660 -1121340
+            1493660 -1125150
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1500000 -1115000
+            1500000 -1111190
+            1493660 -1104850
+          )
+        )
+      )
+      (net OUT
+        (wire
+          (path F.Cu 3000
+            1425000 -1115000
+            1425000 -1103877
+          )
+        )
+        (wire
+          (path F.Cu 3000
+            1521030 -1105340
+            1514192 -1098502
+            1441498 -1098502
+            1436123 -1103877
+            1425000 -1103877
+          )
+        )
+      )
+    )
+  )
+)

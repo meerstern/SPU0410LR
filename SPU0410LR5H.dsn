@@ -1,0 +1,183 @@
+(pcb D:\Microchip_work\05_PCB_DESIGN\SPU0410LR5H\SPU0410LR5H.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  140000 -104000  140000 -119000  160000 -119000  160000 -104000
+            140000 -104000  140000 -104000)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 300)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Mounting_Holes:MountingHole_3mm
+      (place REF2 157000 -116000 front 0 (PN MountingHole_3mm))
+      (place REF1 157000 -107000 front 0 (PN MountingHole_3mm))
+    )
+    (component "generic:generic-SMD1608"
+      (place C1 154000 -111500 front 90 (PN C))
+    )
+    (component "pin-head:pinhead-1X03"
+      (place P1 142500 -111500 front 270 (PN CONN_01X03))
+    )
+    (component SPU0410LR5H:SPU0410LR5H
+      (place U1 150000 -111500 front 270 (PN SPU0410LR5H))
+    )
+  )
+  (library
+    (image Mounting_Holes:MountingHole_3mm
+      (outline (path signal 381  3000 0  2853.17 -927.051  2427.05 -1763.36  1763.36 -2427.05
+            927.051 -2853.17  0 -3000  -927.051 -2853.17  -1763.36 -2427.05
+            -2427.05 -1763.36  -2853.17 -927.051  -3000 0  -2853.17 927.051
+            -2427.05 1763.36  -1763.36 2427.05  -927.051 2853.17  0 3000
+            927.051 2853.17  1763.36 2427.05  2427.05 1763.36  2853.17 927.051))
+      (keepout "" (circle F.Cu 3000))
+      (keepout "" (circle B.Cu 3000))
+    )
+    (image "generic:generic-SMD1608"
+      (outline (path signal 66.04  -797.56 -398.78  -449.58 -398.78))
+      (outline (path signal 66.04  -449.58 -398.78  -449.58 398.78))
+      (outline (path signal 66.04  -797.56 398.78  -449.58 398.78))
+      (outline (path signal 66.04  -797.56 -398.78  -797.56 398.78))
+      (outline (path signal 66.04  449.58 -398.78  797.56 -398.78))
+      (outline (path signal 66.04  797.56 -398.78  797.56 398.78))
+      (outline (path signal 66.04  449.58 398.78  797.56 398.78))
+      (outline (path signal 66.04  449.58 -398.78  449.58 398.78))
+      (outline (path signal 66.04  -1399.54 -797.56  1399.54 -797.56))
+      (outline (path signal 66.04  1399.54 -797.56  1399.54 797.56))
+      (outline (path signal 66.04  -1399.54 797.56  1399.54 797.56))
+      (outline (path signal 66.04  -1399.54 -797.56  -1399.54 797.56))
+      (outline (path signal 101.6  -723.9 347.98  723.9 347.98))
+      (outline (path signal 101.6  723.9 -347.98  -723.9 -347.98))
+      (pin Rect[T]Pad_1049.02x1079.5_um 1 -873.76 0)
+      (pin Rect[T]Pad_1049.02x1079.5_um 2 873.76 0)
+    )
+    (image "pin-head:pinhead-1X03"
+      (outline (path signal 66.04  -254 -254  254 -254))
+      (outline (path signal 66.04  254 -254  254 254))
+      (outline (path signal 66.04  -254 254  254 254))
+      (outline (path signal 66.04  -254 -254  -254 254))
+      (outline (path signal 66.04  -2794 -254  -2286 -254))
+      (outline (path signal 66.04  -2286 -254  -2286 254))
+      (outline (path signal 66.04  -2794 254  -2286 254))
+      (outline (path signal 66.04  -2794 -254  -2794 254))
+      (outline (path signal 66.04  2286 -254  2794 -254))
+      (outline (path signal 66.04  2794 -254  2794 254))
+      (outline (path signal 66.04  2286 254  2794 254))
+      (outline (path signal 66.04  2286 -254  2286 254))
+      (outline (path signal 152.4  -3175 1270  -1905 1270))
+      (outline (path signal 152.4  -1905 1270  -1270 635))
+      (outline (path signal 152.4  -1270 635  -1270 -635))
+      (outline (path signal 152.4  -1270 -635  -1905 -1270))
+      (outline (path signal 152.4  -1270 635  -635 1270))
+      (outline (path signal 152.4  -635 1270  635 1270))
+      (outline (path signal 152.4  635 1270  1270 635))
+      (outline (path signal 152.4  1270 635  1270 -635))
+      (outline (path signal 152.4  1270 -635  635 -1270))
+      (outline (path signal 152.4  635 -1270  -635 -1270))
+      (outline (path signal 152.4  -635 -1270  -1270 -635))
+      (outline (path signal 152.4  -3810 635  -3810 -635))
+      (outline (path signal 152.4  -3175 1270  -3810 635))
+      (outline (path signal 152.4  -3810 -635  -3175 -1270))
+      (outline (path signal 152.4  -1905 -1270  -3175 -1270))
+      (outline (path signal 152.4  1270 635  1905 1270))
+      (outline (path signal 152.4  1905 1270  3175 1270))
+      (outline (path signal 152.4  3175 1270  3810 635))
+      (outline (path signal 152.4  3810 635  3810 -635))
+      (outline (path signal 152.4  3810 -635  3175 -1270))
+      (outline (path signal 152.4  3175 -1270  1905 -1270))
+      (outline (path signal 152.4  1905 -1270  1270 -635))
+      (pin Oval[A]Pad_1524x3048_um (rotate 180) 1 -2540 0)
+      (pin Oval[A]Pad_1524x3048_um (rotate 180) 2 0 0)
+      (pin Oval[A]Pad_1524x3048_um (rotate 180) 3 2540 0)
+    )
+    (image SPU0410LR5H:SPU0410LR5H
+      (outline (path signal 150  -1500 2750  1500 2750))
+      (outline (path signal 150  1500 2750  1500 -1250))
+      (outline (path signal 150  1500 -1250  -1500 -1250))
+      (outline (path signal 150  -1500 -1250  -1500 2750))
+      (pin Round[T]Pad_562_um 3 1015 -634)
+      (pin Round[T]Pad_562_um 2 -1015 -634)
+      (pin Round[T]Pad_723_um 4 966 2103)
+      (pin Round[T]Pad_723_um 1 -966 2103)
+      (pin Round[A]Pad_1224_um 6 0 0)
+      (pin Round[T]Pad_612_um 5 0 2103)
+    )
+    (padstack Round[A]Pad_1224_um
+      (shape (circle F.Cu 1224))
+      (shape (circle B.Cu 1224))
+      (attach off)
+    )
+    (padstack Round[T]Pad_562_um
+      (shape (circle F.Cu 562))
+      (attach off)
+    )
+    (padstack Round[T]Pad_612_um
+      (shape (circle F.Cu 612))
+      (attach off)
+    )
+    (padstack Round[T]Pad_723_um
+      (shape (circle F.Cu 723))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1524x3048_um
+      (shape (path F.Cu 1524  0 -762  0 762))
+      (shape (path B.Cu 1524  0 -762  0 762))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1049.02x1079.5_um
+      (shape (rect F.Cu -524.51 -539.75 524.51 539.75))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net VDD
+      (pins C1-1 P1-1 U1-4)
+    )
+    (net GND
+      (pins C1-2 P1-3 U1-3 U1-2 U1-6 U1-5)
+    )
+    (net OUT
+      (pins P1-2 U1-1)
+    )
+    (class kicad_default "" GND OUT VDD
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
